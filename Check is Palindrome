@@ -1,0 +1,11 @@
+a = input("Enter anything :")
+
+is_pal = True
+n = len(a)
+
+for i in range(len(a)):
+     if a[i] != a[n-1-i]:
+        is_pal = False
+        break
+        
+print(f'{a} is a Palindrome' if is_pal else f'{a} is not a palindrome')
